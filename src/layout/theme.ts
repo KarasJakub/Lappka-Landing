@@ -15,16 +15,16 @@ const breakpoints = {
       extraBold: 800
     },
     color: {
-      primary: "##4EBC84",
+      primary: "#4EBC84",
       textDark: "##1E2022",
       textGrey: "#77838F",
-      white: "##FFFFFF",
+      white: "#FFFFFF",
     },
     MQ: {
-      xs: `@media (min-width: ${breakpoints.tablet}px)`,
-      s: `@media (min-width: ${breakpoints.laptop}px)`,
-      m: `@media (min-width: ${breakpoints.largeLaptop}px)`,
-      l: `@media (min-width: ${breakpoints.desktop}px)`,
+      tablet: `@media (min-width: ${breakpoints.tablet}px)`,
+      laptop: `@media (min-width: ${breakpoints.laptop}px)`,
+      largeLaptop: `@media (min-width: ${breakpoints.largeLaptop}px)`,
+      desktop: `@media (min-width: ${breakpoints.desktop}px)`,
     }
   }
 
