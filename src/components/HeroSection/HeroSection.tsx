@@ -32,7 +32,7 @@ const HeroSection = () => {
             <Button
               icon={GoogleLogo}
               alt="Google Logo"
-              subtitle="Download on the"
+              subtitle="Get it on"
               title="Google Play"
             />
           </S.ButtonsWrapper>
