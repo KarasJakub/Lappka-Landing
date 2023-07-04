@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./layout/theme";
 import HeroSection from "./components/HeroSection/HeroSection";
 import AboutSection from "components/AboutSection/AboutSection";
+import WhyUsSection from "components/WhyUsSection/WhyUsSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <HeroSection />
         <AboutSection />
+        <WhyUsSection />
       </ThemeProvider>
     </>
   );
