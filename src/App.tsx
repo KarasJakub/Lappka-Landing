@@ -4,6 +4,7 @@ import theme from "./layout/theme";
 import HeroSection from "./components/HeroSection/HeroSection";
 import AboutSection from "components/AboutSection/AboutSection";
 import WhyUsSection from "components/WhyUsSection/WhyUsSection";
+import InfoSection from "components/InfoSection/InfoSection";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <HeroSection />
         <AboutSection />
         <WhyUsSection />
+        <InfoSection />
       </ThemeProvider>
     </>
   );
