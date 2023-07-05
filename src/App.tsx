@@ -7,6 +7,7 @@ import WhyUsSection from "components/WhyUsSection/WhyUsSection";
 import InfoSection from "components/InfoSection/InfoSection";
 import OpinionsSection from "components/OpinionsSection/OpinionsSection";
 import CTA from "components/CTA/CTA";
+import Footer from "components/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <InfoSection />
         <OpinionsSection />
         <CTA />
+        <Footer />
       </ThemeProvider>
     </>
   );
