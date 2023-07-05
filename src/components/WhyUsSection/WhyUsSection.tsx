@@ -67,7 +67,7 @@ const WhyUsSection = () => {
         Dlaczego Ł<strong>app</strong>ka?
       </S.Title>
       <S.ContentWrapper>
-        {CardsContent.map((card) => (
+        {CardsContent.map((card, index) => (
           <WhyUsCard
             description={card.description}
             icon={card.icon}

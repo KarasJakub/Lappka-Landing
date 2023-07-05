@@ -55,6 +55,7 @@ export const Paragraph = styled.p`
     font-weight: ${({ theme }) => theme.weight.regular};
     color: ${({ theme }) => theme.color.textGrey};
     font-size: 1.5rem;
+    /* font-family: 'Ubuntu'; */
 `
 
 export const SubParagraph = styled.p`

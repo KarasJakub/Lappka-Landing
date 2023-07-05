@@ -1,17 +1,16 @@
 import React from "react";
 import * as S from "./Button.styled";
 
-interface Props {
-  onClick?: () => void;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon: string;
   alt: string;
   subtitle: string;
   title: string;
 }
 
-const Button = ({ icon, alt, title, subtitle, onClick }: Props) => {
+const Button = ({ icon, alt, title, subtitle, ...props }: ButtonProps) => {
   return (
-    <S.Button onClick={onClick}>
+    <S.Button {...props}>
       <img src={icon} alt={alt} />
       <S.RightContainter>
         <S.ParagraphTop>{subtitle}</S.ParagraphTop>
