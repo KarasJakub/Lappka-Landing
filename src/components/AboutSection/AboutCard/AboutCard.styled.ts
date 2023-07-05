@@ -18,7 +18,7 @@ margin-right: 2rem;
     transform: translateY(-30%);
 `
 
-export const Title = styled.h1`
+export const Title = styled.h3`
     font-weight: ${({ theme }) => theme.weight.extraBold};
     font-size: 1.6rem;
     letter-spacing: 1px;

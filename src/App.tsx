@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import AboutSection from "components/AboutSection/AboutSection";
 import WhyUsSection from "components/WhyUsSection/WhyUsSection";
 import InfoSection from "components/InfoSection/InfoSection";
+import OpinionsSection from "components/OpinionsSection/OpinionsSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <AboutSection />
         <WhyUsSection />
         <InfoSection />
+        <OpinionsSection />
       </ThemeProvider>
     </>
   );

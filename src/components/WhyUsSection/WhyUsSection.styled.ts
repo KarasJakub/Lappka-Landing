@@ -6,7 +6,7 @@ export const WhyUsWrapper = styled.section`
     padding: 5rem;
 `
 
-export const Title = styled.h1`
+export const Title = styled.h4`
     font-weight: ${({ theme }) => theme.weight.bold};
     font-size: 4rem;
     letter-spacing: 2px;

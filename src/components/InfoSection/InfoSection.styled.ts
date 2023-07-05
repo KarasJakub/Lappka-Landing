@@ -35,7 +35,7 @@ export const Image = styled.img`
     }
 `
 
-export const Title = styled.h1`
+export const Title = styled.h5`
     font-weight: ${({ theme }) => theme.weight.bold};
     font-size: 4rem;
     letter-spacing: 2px;

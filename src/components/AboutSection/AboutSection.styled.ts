@@ -7,7 +7,7 @@ export const AboutWrapper = styled.section`
     max-width: 170rem;
 `
 
-export const Title = styled.h1`
+export const Title = styled.h2`
     font-weight: ${({ theme }) => theme.weight.bold};
     font-size: 4rem;
     letter-spacing: 2px;
