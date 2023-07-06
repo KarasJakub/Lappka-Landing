@@ -1,5 +1,4 @@
 import * as S from "./AboutCard.styled";
-import { ReactComponent as ApproveIcon } from "assets/AboutIcons/ApproveIcon.svg";
 
 interface CardProps {
   title: string;
