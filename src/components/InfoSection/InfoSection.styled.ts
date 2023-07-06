@@ -4,15 +4,16 @@ export const InfoWrapper = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 115rem;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 2.5rem;
 
     ${({ theme }) => theme.MQ.laptop} {
         gap: 2rem;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        padding: 10rem 0;
+        /* align-items: center; */
+        /* justify-content: space-between; */
     }
 `
 
@@ -24,6 +25,10 @@ export const TextSection = styled.div`
     ${({ theme }) => theme.MQ.laptop} {
         width: 45%;
     }
+    
+    ${({ theme }) => theme.MQ.largeLaptop} {
+        margin-right: 10rem;
+    }
 `
 
 export const Image = styled.img`
@@ -32,6 +37,10 @@ export const Image = styled.img`
     ${({ theme }) => theme.MQ.tablet} {
         max-width: 50%;
         align-self: center;
+    }
+
+    ${({ theme }) => theme.MQ.laptop} {
+        margin: unset;
     }
 `
 
@@ -54,8 +63,7 @@ export const Title = styled.h5`
 export const Paragraph = styled.p`
     font-weight: ${({ theme }) => theme.weight.regular};
     color: ${({ theme }) => theme.color.textGrey};
-    font-size: 1.5rem;
-    /* font-family: 'Ubuntu'; */
+    font-size: 1.7rem;
 `
 
 export const SubParagraph = styled.p`
