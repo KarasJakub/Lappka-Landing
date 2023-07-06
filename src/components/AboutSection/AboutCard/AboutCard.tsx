@@ -1,5 +1,5 @@
 import * as S from "./AboutCard.styled";
-import ApproveIcon from "assets/AboutIcons/ApproveIcon.svg";
+import { ReactComponent as ApproveIcon } from "assets/AboutIcons/ApproveIcon.svg";
 
 interface CardProps {
   title: string;
@@ -9,7 +9,7 @@ interface CardProps {
 const AboutCard = ({ title, description }: CardProps) => {
   return (
     <S.CardWrapper>
-      <S.IconImage src={ApproveIcon} alt="" />
+      <S.IconImage />
       <S.TextWrapper>
         <S.Title>{title}</S.Title>
         <S.Paragraph>{description}</S.Paragraph>

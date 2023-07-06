@@ -1,7 +1,8 @@
 import { styled } from "styled-components"
+import { ReactComponent as ApproveIcon } from "assets/AboutIcons/ApproveIcon.svg";
 
 export const CardWrapper = styled.div`
-    padding: 2.5rem;
+    padding: 3rem;
     box-shadow: 0px 0px 16px -10px rgba(119, 131, 143, 1);
     max-width: 58rem;
     border-radius: 1rem;
@@ -9,13 +10,13 @@ export const CardWrapper = styled.div`
 `
 
 export const TextWrapper = styled.div`
-
 `
 
-export const IconImage = styled.img`
-margin-right: 2rem;
+export const IconImage = styled(ApproveIcon)`
+    width: 100%;
     max-width: 2rem;
-    transform: translateY(-30%);
+    margin-right: 1.7rem;
+    transform: translateY(70%);
 `
 
 export const Title = styled.h3`
