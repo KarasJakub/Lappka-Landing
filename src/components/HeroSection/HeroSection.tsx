@@ -1,5 +1,5 @@
 import * as S from "./HeroSection.styled";
-import CompanyLogo from "assets/Hero/HeroIcons/LappkaLogo.svg";
+import { ReactComponent as CompanyLogo } from "assets/Hero/HeroIcons/LappkaLogo.svg";
 import AppleLogo from "assets/Hero/HeroIcons/AppleIcon.svg";
 import GoogleLogo from "assets/Hero/HeroIcons/GoogleIcon.svg";
 import GreenSquare from "assets/Hero/HeroImages/GreenSquare.svg";
@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <S.HeroWrapper>
       <S.HeroHeading>
-        <S.HeadingCompanyImage src={CompanyLogo} alt="Łappka Logo" />
+        <CompanyLogo />
         <S.TextWrapper>
           <S.Title>
             Ł<strong>app</strong>ka – pomóż zwierzakom za pomocą jednego
