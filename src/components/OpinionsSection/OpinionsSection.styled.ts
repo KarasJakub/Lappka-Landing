@@ -4,7 +4,7 @@ export const OpinionsWrapper = styled.section`
     width: 100%;
     background-color: #F7FAFD;
     padding: 7rem 2.5rem 7rem 2.5rem;
-    /* border-radius: 100% 0% 51% 49% / 0% 90% 70% 100% ; */
+    border-radius: 100% 0% 51% 49% / 0% 90% 70% 100% ;
     overflow-x: hidden;
     position: relative;
     margin: 0 auto;
@@ -25,12 +25,11 @@ export const Title = styled.h6`
     letter-spacing: 2px;
     line-height: 4.8rem;
     text-align: center;
-    margin-bottom: 4rem;
 `
 
 export const FirstWomenImage = styled.img`
     position: absolute;
-    top: 18%;
+    top: 15%;
     left: 10%;
     display: none;
 
@@ -44,7 +43,7 @@ export const FirstWomenImage = styled.img`
 `
 export const SecondWomenImage = styled.img`
     position: absolute;
-    top: 13%;
+    top: 11%;
     right: 13%;
     display: none;
 
@@ -59,7 +58,7 @@ export const SecondWomenImage = styled.img`
 
 export const FirstManImage = styled.img`
     position: absolute;
-    top: 71.7%;
+    top: 60%;
     left: 8.5%;
     display: none;
 
@@ -74,7 +73,7 @@ export const FirstManImage = styled.img`
 
 export const SecondManImage = styled.img`
     position: absolute;
-    bottom: -15%;
+    bottom: 5%;
     right: 11%;
     display: none;
 

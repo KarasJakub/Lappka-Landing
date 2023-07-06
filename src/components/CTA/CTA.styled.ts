@@ -7,7 +7,8 @@ export const CTAWrapper = styled.aside`
     align-items: center;
     padding: 4rem;
     background-color: ${({ theme }) => theme.color.primary};
-    max-width: 120rem;
+    max-width: 115rem;
+    max-height: 25rem;
     margin: 0 auto;
     margin-bottom: 4rem;
     border-radius: 2rem;
@@ -16,14 +17,14 @@ export const CTAWrapper = styled.aside`
     ${({ theme }) => theme.MQ.laptop} {
         flex-direction: row;
         padding: 7rem;
-        transform: translateY(-20%);
+        transform: translateY(-30%);
     }
 `
 
 export const Paragraph = styled.p`
     font-size: 2rem;
     color: ${({ theme }) => theme.color.white};
-    font-weight: ${({ theme }) => theme.weight.regular};
+    font-weight: ${({ theme }) => theme.weight.light};
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
 
@@ -45,7 +46,7 @@ export const FormSection = styled.div`
 export const SmallParagraph = styled.p`
     font-size: 1.8rem;
     color: ${({ theme }) => theme.color.white};
-    font-weight: ${({ theme }) => theme.weight.medium};
+    font-weight: ${({ theme }) => theme.weight.light};
     padding-bottom: 1rem;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -64,7 +65,7 @@ export const Form = styled.form`
 `
 
 export const InputWrapper = styled.div`
-    background-color: #6adea3;
+    background-color: #60c390;
     padding: 1rem 1rem 1rem 2rem;
     border-radius: .5rem;
     display: flex;
@@ -79,13 +80,15 @@ export const InputWrapper = styled.div`
 `
 
 export const Input = styled.input`
+    color: rgba(255, 255, 255, .1);
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
 
     &::placeholder {
         color: white;
         text-align: center;
+        color: rgba(255, 255, 255, .5);
 
         ${({ theme }) => theme.MQ.laptop} {
             text-align: unset;
@@ -106,7 +109,7 @@ export const CTAButton = styled.button`
     background-color: ${({ theme }) => theme.color.white};
     border-radius: .5rem;
     color: ${({ theme }) => theme.color.primary};
-    font-weight: ${({ theme }) => theme.weight.semibold};
+    font-weight: ${({ theme }) => theme.weight.medium};
     line-height: 1.8rem;
     font-size: 1.8rem;
     margin-top: 1.5rem;

@@ -2,8 +2,18 @@ import { styled } from "styled-components"
 import BackSquare from "assets/Opinions/Photos/BackSquare.png";
 
 export const CardRootWrapper = styled.div`
-    position: relative;
+/* z-index: 9;
+    &:before {
+        content: url(${BackSquare});
+        overflow: visible;
+        position: absolute;
+        top: 20%;
+        display: block;
+        width: 100%;
+        z-index: -3;
+    } */
 `
+
 
 export const CardWrapper = styled.div`
     background-color: ${({ theme }) => theme.color.white};
@@ -13,18 +23,12 @@ export const CardWrapper = styled.div`
     position: relative;
     overflow: hidden;
     border-radius: 2rem;
+    margin-top: 7rem;
 
-    /* &:after {
-        content: url(${BackSquare});
-        overflow: visible;
-        position: absolute;
-        top: 20%;
-        display: block;
-        width: 100%;
-    } */
+
 
     ${({ theme }) => theme.MQ.tablet} {
-        padding: 7rem 7rem 5rem 7rem;
+        padding: 10.5rem 8rem 5rem 8rem;
     }
 `
 
@@ -41,8 +45,9 @@ export const BackgroundImage = styled.img`
 export const Description = styled.p`
     font-weight: ${({ theme }) => theme.weight.regular};
     color: ${({ theme }) => theme.color.textGrey};
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding-bottom: 2rem;
+    z-index: 9;
 `
 
 export const Name = styled.p`
