@@ -59,7 +59,7 @@ const OpinionsSlider = () => {
     [currentSlide]
   );
   const isNextDisabled = React.useMemo(
-    () => currentSlide === 2,
+    () => currentSlide === 1,
     [currentSlide]
   );
 

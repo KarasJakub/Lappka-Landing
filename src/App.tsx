@@ -27,7 +27,7 @@ function App() {
         <WhyUsSection />
         <InfoSection />
         <OpinionsSection />
-        <CTA />
+        {/* <CTA /> */}
         <Footer />
       </ThemeProvider>
     </>

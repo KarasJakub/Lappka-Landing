@@ -3,18 +3,14 @@ import { styled } from "styled-components";
 export const OpinionsWrapper = styled.section`
     width: 100%;
     background-color: #F7FAFD;
-    padding: 4rem;
-    border-radius: 100% 0% 51% 49% / 0% 90% 70% 100% ;
+    padding: 7rem 2.5rem 7rem 2.5rem;
+    /* border-radius: 100% 0% 51% 49% / 0% 90% 70% 100% ; */
     overflow-x: hidden;
     position: relative;
     margin: 0 auto;
 
     ${({ theme }) => theme.MQ.tablet} {
-        padding: 7rem;
-    }
-
-    ${({ theme }) => theme.MQ.desktop} {
-        padding: 7rem;
+        padding: 14rem 0;
     }
 `
 export const OpinionsInnerWrapper = styled.div`
@@ -34,8 +30,8 @@ export const Title = styled.h6`
 
 export const FirstWomenImage = styled.img`
     position: absolute;
-    top: 20%;
-    left: 7%;
+    top: 18%;
+    left: 10%;
     display: none;
 
     ${({ theme }) => theme.MQ.largeLaptop} {
@@ -48,8 +44,8 @@ export const FirstWomenImage = styled.img`
 `
 export const SecondWomenImage = styled.img`
     position: absolute;
-    top: 20%;
-    right: 8%;
+    top: 13%;
+    right: 13%;
     display: none;
 
     ${({ theme }) => theme.MQ.largeLaptop} {
@@ -63,8 +59,8 @@ export const SecondWomenImage = styled.img`
 
 export const FirstManImage = styled.img`
     position: absolute;
-    top: 60%;
-    left: 7%;
+    top: 71.7%;
+    left: 8.5%;
     display: none;
 
     ${({ theme }) => theme.MQ.largeLaptop} {
@@ -78,8 +74,8 @@ export const FirstManImage = styled.img`
 
 export const SecondManImage = styled.img`
     position: absolute;
-    top: 70%;
-    right: 7%;
+    bottom: -15%;
+    right: 11%;
     display: none;
 
     ${({ theme }) => theme.MQ.largeLaptop} {
