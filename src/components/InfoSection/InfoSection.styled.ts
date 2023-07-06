@@ -12,8 +12,6 @@ export const InfoWrapper = styled.section`
         gap: 2rem;
         flex-direction: row;
         padding: 10rem 0;
-        /* align-items: center; */
-        /* justify-content: space-between; */
     }
 `
 
@@ -25,7 +23,7 @@ export const TextSection = styled.div`
     ${({ theme }) => theme.MQ.laptop} {
         width: 45%;
     }
-    
+
     ${({ theme }) => theme.MQ.largeLaptop} {
         margin-right: 10rem;
     }

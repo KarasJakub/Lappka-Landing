@@ -54,8 +54,14 @@ const OpinionsSlider = () => {
     setCurrentSlide(current);
   };
 
-  const isPrevDisabled = currentSlide === 0;
-  const isNextDisabled = currentSlide === 1;
+  const isPrevDisabled = React.useMemo(
+    () => currentSlide === 0,
+    [currentSlide]
+  );
+  const isNextDisabled = React.useMemo(
+    () => currentSlide === 2,
+    [currentSlide]
+  );
 
   return (
     <S.SliderWrapperOuter>
