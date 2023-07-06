@@ -11,52 +11,52 @@ import EmptyHeartIcon from "assets/WhyUsIcons/EmptyHeart.svg";
 
 const CardsContent = [
   {
-    key: 1,
     description:
       "Wyszukiwanie zwierzaków w oparciu o Twoje preferencje co do ich typów (pies, kot, świnka morska itd.) oraz w wybranej lokalizacji (położenie schroniska względem Ciebie itp.)",
     icon: GlassIcon,
+    alt: "Lupa",
   },
   {
-    key: 2,
     description:
       "Podstawowe informacje na jego temat wszystkich zwierzaków, jak np.: odległość do schroniska, w którym przebywa, gatunek, maść, wiek, płeć, status sterylizacji oraz informacje o usposobieniu zwierzęcia)",
     icon: HomeIcon,
+    alt: "Okienko wyjścia",
   },
   {
-    key: 3,
     description:
       "Możliwość udostępniania profili zwierzaków w mediach społecznościowych",
     icon: WindowIcon,
+    alt: "Koło ratunkowe",
   },
   {
-    key: 4,
     description:
       "Cyfrowa książeczka zdrowia pupila, w której możesz aktywnie śledzić stan szczepień, wizyt u weterynarza, przepisywanych lekarstw, odbytych operacji oraz innych kwestii związanych ze zdrowiem pupila",
     icon: HeartIcon,
+    alt: "Lokalizacja",
   },
   {
-    key: 5,
     description:
       "Możliwość wyboru różnych wariantów wolontariatu, związanego z pomocą dla schronisk i zwierzaków",
     icon: CircleIcon,
+    alt: "Domek - logo firmy",
   },
   {
-    key: 6,
     description:
       "Zgłaszanie zaginionych pupili, z możliwością korespondowania między członkami społeczności oraz możliwością udostępniania lokalizacji",
     icon: EyeIcon,
+    alt: "Serce",
   },
   {
-    key: 7,
     description:
       "Raportowanie błąkających się zwierząt wraz z możliwością udostępniania ich lokalizacji w aplikacji (informowanie schronisk i służb zajmujących się opuszczonymi zwierzętami)",
     icon: LocationIcon,
+    alt: "Oko",
   },
   {
-    key: 8,
     description:
       "Możliwość zapisywania przeglądanych profili w kategorii „Ulubione”, tak aby w wygodny sposób przeglądać je później",
     icon: EmptyHeartIcon,
+    alt: "Serce",
   },
 ];
 
@@ -71,7 +71,8 @@ const WhyUsSection = () => {
           <WhyUsCard
             description={card.description}
             icon={card.icon}
-            key={card.key}
+            alt={card.alt}
+            key={index}
           />
         ))}
       </S.ContentWrapper>
