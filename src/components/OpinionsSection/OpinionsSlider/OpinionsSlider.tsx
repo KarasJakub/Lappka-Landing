@@ -8,14 +8,12 @@ import Arrow from "assets/Slider/Icons/Arrow.svg";
 
 const OpinionsContent = [
   {
-    key: 1,
     description:
       "Dzięki Łappce bardzo szybko odnalazłam moją ukochaną Calineczkę. Uciekła mi z domu nad ranem i nie mogłam jej dogonić. Zrozpaczona szybko udostępniłam wiadomość o tym w Łappce. Już wieczorem odezwał się do mnie inny użytkownik, mówiąc, że Calineczka jest u niego w ogrodzie. Jakieś 15 minut później już jechałyśmy razem do domu. Cudowna aplikacja!",
     name: "Malwina",
     age: "32 lata",
   },
   {
-    key: 2,
     description:
       "Już do jakiegoś czasu myślałam o adopcji pieska. Niestety nigdy nie miałam czasu, żeby pojechać do schroniska i znaleźć mojego nowego ukochanego 😊 dzięki Łappce wybrałam Diego, który znajdował się w schronisku blisko mnie. Wystarczyło założenie konta i kilka kliknięć. Teraz jesteśmy z Diegiem w domu i za nic nie zrozumiem dlaczego ten slodziak był w schronisku. Jeśli ktoś myśli o adopcji gorąco polecam Łappkę!",
     name: "Kunegunda",
@@ -67,12 +65,12 @@ const OpinionsSlider = () => {
           {...sliderSettings}
           afterChange={handleAfterChange}
         >
-          {OpinionsContent.map((opinion) => (
+          {OpinionsContent.map((opinion, index) => (
             <OpinionCard
               description={opinion.description}
               name={opinion.name}
               age={opinion.age}
-              key={opinion.key}
+              key={index}
             />
           ))}
         </Slider>

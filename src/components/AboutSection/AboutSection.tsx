@@ -29,8 +29,12 @@ const AboutSection = () => {
     <S.AboutWrapper>
       <S.Title>O naszej aplikacji</S.Title>
       <S.ContentWrapper>
-        {CardsData.map((card) => (
-          <AboutCard title={card.title} description={card.description} />
+        {CardsData.map((card, index) => (
+          <AboutCard
+            title={card.title}
+            description={card.description}
+            key={index}
+          />
         ))}
       </S.ContentWrapper>
     </S.AboutWrapper>
