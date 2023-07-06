@@ -19,6 +19,6 @@ export const Description = styled.p`
 
 export const IconWrapper = styled.div`
     width: 100%;
-    max-width: 3.6rem;
+    max-width: 3rem;
     margin-right: 1.5rem;
 `
