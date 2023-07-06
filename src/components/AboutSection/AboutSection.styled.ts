@@ -3,8 +3,12 @@ import { styled } from "styled-components";
 export const AboutWrapper = styled.section`
     width: 100%;
     margin: 0 auto;
-    margin-top: 15rem;
+    margin-top: 4rem;
     max-width: 170rem;
+
+    ${({ theme }) => theme.MQ.laptop} {
+        margin-top: 15rem;
+    }
 `
 
 export const Title = styled.h2`
@@ -12,6 +16,7 @@ export const Title = styled.h2`
     font-size: 4rem;
     letter-spacing: 2px;
     line-height: 4.8rem;
+    font-weight: ${({theme}) => theme.weight.bold};
     text-align: center;
 `
 
@@ -20,10 +25,7 @@ export const ContentWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 3rem;
     padding: 2.5rem;
-
-    ${({ theme }) => theme.MQ.tablet} {
-        padding: 5rem;
-    }
+    margin: 6rem 0 10rem 0;
 `

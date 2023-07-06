@@ -2,7 +2,7 @@ import { styled } from "styled-components"
 import { ReactComponent as ApproveIcon } from "assets/AboutIcons/ApproveIcon.svg";
 
 export const CardWrapper = styled.div`
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: 0px 0px 16px -10px rgba(119, 131, 143, 1);
     max-width: 58rem;
     border-radius: 1rem;
@@ -10,6 +10,9 @@ export const CardWrapper = styled.div`
 `
 
 export const TextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 `
 
 export const IconImage = styled(ApproveIcon)`
@@ -20,22 +23,20 @@ export const IconImage = styled(ApproveIcon)`
 `
 
 export const Title = styled.h3`
-    font-weight: ${({ theme }) => theme.weight.extraBold};
+    font-weight: ${({ theme }) => theme.weight.bold};
     font-size: 1.6rem;
     letter-spacing: 1px;
     line-height: 3rem;
-    padding-bottom: 1rem;
 
     ${({ theme }) => theme.MQ.tablet} {
         font-size: 2rem;
         letter-spacing: 1px;
         line-height: 4.8rem;
-        padding-bottom: unset;
     }
 `
 
 export const Paragraph = styled.p`
     font-weight: ${({ theme }) => theme.weight.regular};
     color: ${({ theme }) => theme.color.textGrey};
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 `

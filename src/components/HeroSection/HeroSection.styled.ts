@@ -5,9 +5,14 @@ export const HeroWrapper = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 auto;
 
     ${({ theme }) => theme.MQ.tablet} {
         flex-direction: row;
+    }
+
+    ${({ theme }) => theme.MQ.largeLaptop} {
+        gap: 3rem;
     }
 `
 
@@ -15,6 +20,7 @@ export const HeroHeading = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: center;
     padding: 3rem;
 
     ${({ theme }) => theme.MQ.tablet} {
@@ -22,7 +28,8 @@ export const HeroHeading = styled.section`
     }
 
     ${({ theme }) => theme.MQ.largeLaptop} {
-        max-width: 50rem;
+        max-width: 67rem;
+        margin-left: 7%;
     }
 
     ${({ theme }) => theme.MQ.desktop} {
@@ -35,7 +42,6 @@ export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2.5rem;
 `
 
 export const HeadingCompanyImage = styled.img`
@@ -47,6 +53,7 @@ export const Title = styled.h1`
     font-size: 4rem;
     letter-spacing: 2px;
     line-height: 4.8rem;
+    font-weight: ${({theme}) => theme.weight.bold};
 
 & strong {
     color: ${({ theme }) => theme.color.primary};
@@ -57,6 +64,8 @@ export const Paragraph = styled.p`
     font-weight: ${({ theme }) => theme.weight.regular};
     color: ${({ theme }) => theme.color.textGrey};
     font-size: 2rem;
+    margin: 2rem 0 4rem 0;
+    font-weight: ${({theme}) => theme.weight.regular};
 `
 
 export const ButtonsWrapper = styled.div`
@@ -82,6 +91,7 @@ export const DesktopDashbordImage = styled.img`
 
     ${({ theme }) => theme.MQ.largeLaptop} {
         display: block;
+        left: -10%;
     }
 
     ${({ theme }) => theme.MQ.desktop} {
@@ -97,6 +107,10 @@ export const DesktopAdoptImage = styled.img`
         display: block;
     }
 
+    ${({ theme }) => theme.MQ.largeLaptop} {
+        right: 15%;
+    }
+
     ${({ theme }) => theme.MQ.desktop} {
         right: 20%;
     }
@@ -109,6 +123,10 @@ export const DesktopDogImage = styled.img`
 
     ${({ theme }) => theme.MQ.laptop} {
         display: block;
+    }
+
+    ${({ theme }) => theme.MQ.largeLaptop} {
+        right: 15%;
     }
 
     ${({ theme }) => theme.MQ.desktop} {
