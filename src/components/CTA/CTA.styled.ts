@@ -8,9 +8,7 @@ export const CTAWrapper = styled.aside`
     padding: 4rem;
     background-color: ${({ theme }) => theme.color.primary};
     max-width: 115rem;
-    max-height: 25rem;
     margin: 0 auto;
-    margin-bottom: 4rem;
     border-radius: 2rem;
     width: 90%;
 
@@ -18,6 +16,7 @@ export const CTAWrapper = styled.aside`
         flex-direction: row;
         padding: 7rem;
         transform: translateY(-30%);
+        max-height: 25rem;
     }
 `
 

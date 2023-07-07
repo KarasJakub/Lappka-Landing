@@ -1,12 +1,12 @@
 import * as S from "./HeroSection.styled";
 import { ReactComponent as CompanyLogo } from "assets/Hero/HeroIcons/LappkaLogo.svg";
-import AppleLogo from "assets/Hero/HeroIcons/AppleIcon.svg";
-import GoogleLogo from "assets/Hero/HeroIcons/GoogleIcon.svg";
+import { ReactComponent as AppleLogo } from "assets/Hero/HeroIcons/AppleIcon.svg";
+import { ReactComponent as GoogleLogo } from "assets/Hero/HeroIcons/GoogleIcon.svg";
 import GreenSquare from "assets/Hero/HeroImages/GreenSquare.svg";
 import DogImage from "assets/Hero/HeroImages/SmartphoneSecond.png";
 import AppDashboradImage from "assets/Hero/HeroImages/SmartphoneFirst.png";
 import AdoptImage from "assets/Hero/HeroImages/SmartphoneThird.png";
-import Button from "./Button/Button";
+import ButtonComponent from "components/ButtonComponent/ButtonComponent";
 
 const HeroSection = () => {
   return (
@@ -23,18 +23,20 @@ const HeroSection = () => {
             oraz opiekowanie się nimi.
           </S.Paragraph>
           <S.ButtonsWrapper>
-            <Button
-              icon={AppleLogo}
-              alt="Apple Logo"
-              subtitle="Download on the"
-              title="App Store"
-            />
-            <Button
-              icon={GoogleLogo}
-              alt="Google Logo"
-              subtitle="Get it on"
-              title="Google Play"
-            />
+            <ButtonComponent variant="primary">
+              <AppleLogo />
+              <S.ButtonRightContainter>
+                <S.ButtonParagraphTop>Download on the</S.ButtonParagraphTop>
+                <S.ButtonParagraphBottom>App Store</S.ButtonParagraphBottom>
+              </S.ButtonRightContainter>
+            </ButtonComponent>
+            <ButtonComponent variant="primary">
+              <GoogleLogo />
+              <S.ButtonRightContainter>
+                <S.ButtonParagraphTop>Get it on</S.ButtonParagraphTop>
+                <S.ButtonParagraphBottom>Google Play</S.ButtonParagraphBottom>
+              </S.ButtonRightContainter>
+            </ButtonComponent>
           </S.ButtonsWrapper>
         </S.TextWrapper>
       </S.HeroHeading>

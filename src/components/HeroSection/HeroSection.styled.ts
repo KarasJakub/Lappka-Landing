@@ -170,3 +170,15 @@ export const ImageBackground = styled.img`
         display: block;
     }
 `
+
+export const ButtonRightContainter = styled.div``
+
+export const ButtonParagraphTop = styled.p`
+    font-weight: ${({ theme }) => theme.weight.regular};
+    font-size: 1rem;
+`
+
+export const ButtonParagraphBottom = styled.p`
+    font-weight: ${({ theme }) => theme.weight.regular};
+    font-size: 1.8rem;
+`
