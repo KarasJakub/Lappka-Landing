@@ -33,7 +33,7 @@ const AboutSection = () => {
           <AboutCard
             title={card.title}
             description={card.description}
-            key={index}
+            key={`key: ${index}`}
           />
         ))}
       </S.ContentWrapper>

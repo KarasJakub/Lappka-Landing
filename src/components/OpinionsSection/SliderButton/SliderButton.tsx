@@ -1,18 +1,11 @@
 import * as S from "./SliderButton.styled";
 
-interface ButtonProps {
-  onClick: () => void;
-  image?: string;
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode;
 }
 
-const Buttons = ({ onClick, image, children }: ButtonProps) => {
-  return (
-    <S.Button onClick={onClick}>
-      {/* <img src={image} alt="" /> */}
-      {children}
-    </S.Button>
-  );
+const Button = ({ children, ...props }: ButtonProps) => {
+  return <S.Button {...props}>{children}</S.Button>;
 };
 
-export default Buttons;
+export default Button;

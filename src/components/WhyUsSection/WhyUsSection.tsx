@@ -63,7 +63,7 @@ const WhyUsSection = () => {
           <WhyUsCard
             description={card.description}
             icon={card.icon}
-            key={`card_${index}`}
+            key={`key: ${index}`}
           />
         ))}
       </S.ContentWrapper>
