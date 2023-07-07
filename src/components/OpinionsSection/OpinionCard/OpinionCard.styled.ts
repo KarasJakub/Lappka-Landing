@@ -29,6 +29,7 @@ export const CardWrapper = styled.div`
 
     ${({ theme }) => theme.MQ.tablet} {
         padding: 10.5rem 8rem 5rem 8rem;
+        height: 40rem;
     }
 `
 

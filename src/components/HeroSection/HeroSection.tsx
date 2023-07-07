@@ -6,7 +6,7 @@ import GreenSquare from "assets/Hero/HeroImages/GreenSquare.svg";
 import DogImage from "assets/Hero/HeroImages/SmartphoneSecond.png";
 import AppDashboradImage from "assets/Hero/HeroImages/SmartphoneFirst.png";
 import AdoptImage from "assets/Hero/HeroImages/SmartphoneThird.png";
-import ButtonComponent from "components/ButtonComponent/ButtonComponent";
+import ButtonComponent from "components/shared/ButtonComponent/ButtonComponent";
 
 const HeroSection = () => {
   return (
