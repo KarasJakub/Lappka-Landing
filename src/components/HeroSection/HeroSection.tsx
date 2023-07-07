@@ -12,7 +12,10 @@ const HeroSection = () => {
   return (
     <S.HeroWrapper>
       <S.HeroHeading>
-        <CompanyLogo />
+        <a href="/">
+          <CompanyLogo />
+        </a>
+
         <S.TextWrapper>
           <S.Title>
             Ł<strong>app</strong>ka – pomóż zwierzakom za pomocą jednego

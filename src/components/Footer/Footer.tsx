@@ -5,10 +5,16 @@ const Footer = () => {
   return (
     <S.FooterWrapper>
       <S.Paragraph>© 2021 All rights reserved.</S.Paragraph>
-      <CompanyLogo />
+      <a href="/">
+        <CompanyLogo />
+      </a>
       <S.RightSectionWrapper>
-        <S.Paragraph>Regulamin</S.Paragraph>
-        <S.Paragraph>Polityka Prywatności</S.Paragraph>
+        <a href="/" style={{ textDecoration: "none" }}>
+          <S.Paragraph>Regulamin</S.Paragraph>
+        </a>
+        <a href="/" style={{ textDecoration: "none" }}>
+          <S.Paragraph>Polityka Prywatności</S.Paragraph>
+        </a>
       </S.RightSectionWrapper>
     </S.FooterWrapper>
   );

@@ -9,14 +9,14 @@ interface CardProps {
 
 const OpinionCard = ({ description, name, age }: CardProps) => {
   return (
-    // <S.CardRootWrapper>
     <S.CardWrapper>
       <S.BackgroundImage src={QuotationMarkIcon} alt="Ikona apostrofu" />
       <S.Description>{description}</S.Description>
-      <S.Name>{name}</S.Name>
-      <S.AgeParagraph>{age}</S.AgeParagraph>
+      <S.IdentityWrapper>
+        <S.Name>{name}</S.Name>
+        <S.AgeParagraph>{age}</S.AgeParagraph>
+      </S.IdentityWrapper>
     </S.CardWrapper>
-    // </S.CardRootWrapper>
   );
 };
 
