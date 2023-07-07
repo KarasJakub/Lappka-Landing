@@ -20,6 +20,10 @@ const breakpoints = {
       textGrey: "#77838F",
       white: "#FFFFFF",
     },
+    font: {
+      primary: '"Ubuntu", sans-serif',
+      secondary: '"Nunito", sans-serif',
+    },
     MQ: {
       tablet: `@media (min-width: ${breakpoints.tablet}px)`,
       laptop: `@media (min-width: ${breakpoints.laptop}px)`,

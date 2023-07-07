@@ -176,9 +176,11 @@ export const ButtonRightContainter = styled.div``
 export const ButtonParagraphTop = styled.p`
     font-weight: ${({ theme }) => theme.weight.regular};
     font-size: 1rem;
+    font-family: ${({ theme }) => theme.font.secondary};
 `
 
 export const ButtonParagraphBottom = styled.p`
     font-weight: ${({ theme }) => theme.weight.regular};
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    font-family: ${({ theme }) => theme.font.secondary};
 `

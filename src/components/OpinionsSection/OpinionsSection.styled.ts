@@ -4,13 +4,16 @@ export const OpinionsWrapper = styled.section`
     width: 100%;
     background-color: #F7FAFD;
     padding: 7rem 2.5rem 7rem 2.5rem;
-    border-radius: 100% 0% 51% 49% / 0% 90% 70% 100% ;
     overflow-x: hidden;
     position: relative;
     margin: 0 auto;
 
     ${({ theme }) => theme.MQ.tablet} {
         padding: 14rem 0;
+    }
+
+    ${({ theme }) => theme.MQ.laptop} {
+        border-radius: 100% 0% 51% 49% / 0% 90% 70% 100% ;
     }
 `
 export const OpinionsInnerWrapper = styled.div`
