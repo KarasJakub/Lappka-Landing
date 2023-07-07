@@ -17,7 +17,7 @@ export const FooterWrapper = styled.footer`
 
 export const Paragraph = styled.p`
     color: #616161;
-    font-family: "Ubuntu", sans-serif;
+    font-family: ${({ theme }) => theme.font.primary};
     font-size: 1.6rem;
     order: 1;
 

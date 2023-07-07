@@ -25,7 +25,7 @@ export const Paragraph = styled.p`
     color: ${({ theme }) => theme.color.white};
     font-weight: ${({ theme }) => theme.weight.light};
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: ${({ theme }) => theme.font.primary};
 
     & strong {
         font-weight: ${({ theme }) => theme.weight.extraBold};
@@ -48,7 +48,7 @@ export const SmallParagraph = styled.p`
     font-weight: ${({ theme }) => theme.weight.light};
     padding-bottom: 1rem;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: ${({ theme }) => theme.font.primary};
 
     & strong {
         font-weight: ${({ theme }) => theme.weight.bold};
